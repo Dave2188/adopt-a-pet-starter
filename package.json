@@ -1,5 +1,4 @@
 {
-  "homepage": "http://dave2188.github.io/adopt-a-pet-starter",
   "name": "cute-pets-website",
   "version": "0.1.0",
   "private": true,
@@ -15,8 +14,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "format": "prettier --write .",
     "test": "react-scripts test",
@@ -41,7 +38,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
     "msw": "^0.28.2",
     "prettier": "^2.2.1"
   },
