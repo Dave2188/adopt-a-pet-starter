@@ -8,8 +8,6 @@ import { useLocation } from 'react-router-dom';
 
 const SearchPage = () => {
   const location = useLocation();
-
-  // Get the search value from useLocation() here
   const { search } = location;
 
   const queryParams = useMemo(() => {
