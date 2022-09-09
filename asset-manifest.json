@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/adopt-a-pet-starter/static/js/main.d9cad951.chunk.js",
-    "main.js.map": "/adopt-a-pet-starter/static/js/main.d9cad951.chunk.js.map",
+    "main.js": "/adopt-a-pet-starter/static/js/main.22bb9645.chunk.js",
+    "main.js.map": "/adopt-a-pet-starter/static/js/main.22bb9645.chunk.js.map",
     "runtime-main.js": "/adopt-a-pet-starter/static/js/runtime-main.f5a85bf3.js",
     "runtime-main.js.map": "/adopt-a-pet-starter/static/js/runtime-main.f5a85bf3.js.map",
     "static/js/2.5c81f601.chunk.js": "/adopt-a-pet-starter/static/js/2.5c81f601.chunk.js",
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.f5a85bf3.js",
     "static/js/2.5c81f601.chunk.js",
-    "static/js/main.d9cad951.chunk.js"
+    "static/js/main.22bb9645.chunk.js"
   ]
 }
