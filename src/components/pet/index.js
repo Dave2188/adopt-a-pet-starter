@@ -13,10 +13,7 @@ const Pet = ({ animal }) => {
           {
             <img
               className="pet-image"
-              src={
-                animal.photos[0]?.medium ||
-                'adopt-a-pet-starter/missing-animal.png'
-              }
+              src={animal.photos[0]?.medium || 'missing-animal.png'}
               alt=""
             />
           }

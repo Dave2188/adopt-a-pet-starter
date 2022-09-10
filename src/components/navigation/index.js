@@ -27,9 +27,9 @@ const Navigation = () => {
           {/* This link should have an activeClassName and exact prop */}
           <NavLink
             to={'/'}
-            exact
-            activeClassName="nav-link-active"
+            exact={'true'}
             className="nav-link"
+            activeClassName="nav-link-active"
           >
             All Pets
           </NavLink>
@@ -42,7 +42,7 @@ const Navigation = () => {
                   to={`/${type._links.self.href.split('/').pop()}`}
                   key={type.name}
                   className="nav-link"
-                  exact
+                  exact={'true'}
                   activeClassName="nav-link-active"
                 >
                   {type.name}s

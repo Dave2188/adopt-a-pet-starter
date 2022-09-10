@@ -3,10 +3,10 @@ import SearchPage from './pages/search';
 import PetDetailsPage from './pages/detail';
 import PetDetailsNotFound from './pages/petDetailsNotFound';
 import Navigation from './components/navigation';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
   return (
-    <Router>
+    <Router basemname={`/${process.env.PUBLIC_URL}`}>
       <Navigation />
       <Switch>
         <Route exact path="/pet-details-not-found">
