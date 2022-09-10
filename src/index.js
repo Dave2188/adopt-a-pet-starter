@@ -3,7 +3,12 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 const { worker } = require('./mocks/browser');
-worker.start();
+
+worker.start({
+  serviceWorker: {
+    url: '/adopt-a-pet-starter/mockServiceWorker.js'
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>

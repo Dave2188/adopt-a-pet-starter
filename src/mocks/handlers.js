@@ -1,7 +1,7 @@
 import { rest } from 'msw';
 import types from './data/types.json';
 import animals from './data/animals.json';
-import details from './data/details.json';
+import details from './data/types.json';
 
 export const handlers = [
   rest.get('/types', (_req, res, ctx) => {
