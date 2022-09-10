@@ -22,6 +22,8 @@
   border-radius: 18px;
   padding: 6px 24px;
   font-size: 18px;
+  display: inline-block;
+  text-align: center;
 }
 
 .nav-link-active {
