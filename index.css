@@ -6,11 +6,12 @@
 }
 
 .nav-links {
-  padding: 12px 180px;
+  padding: 12px 130px;
   background: #56009b;
   color: white;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
 }
