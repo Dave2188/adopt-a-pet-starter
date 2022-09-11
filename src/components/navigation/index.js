@@ -23,27 +23,28 @@ const Navigation = () => {
         <Search />
       </div>
       <ul className="nav-links">
-        <li key="all">
-          {/* This link should have an activeClassName and exact prop */}
+        <li key="all" className="nav-link">
           <NavLink
             to={'/'}
-            exact
-            activeClassName="nav-link-active"
-            className="nav-link"
+            end
+            isactive="true"
+            style={({ isActive }) => ({
+              background: isActive ? '#320059' : '#56009b'
+            })}
           >
             All Pets
           </NavLink>
         </li>
         {petTypes
           ? petTypes.map((type) => (
-              <li key={type.name}>
-                {/* These links should have an activeClassName prop */}
+              <li key={type.name} className="nav-link">
                 <NavLink
                   to={`/${type._links.self.href.split('/').pop()}`}
                   key={type.name}
-                  className="nav-link"
-                  exact
-                  activeClassName="nav-link-active"
+                  end
+                  style={({ isActive }) => ({
+                    background: isActive ? '#320059' : '#56009b'
+                  })}
                 >
                   {type.name}s
                 </NavLink>{' '}
