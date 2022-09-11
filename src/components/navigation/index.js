@@ -7,6 +7,20 @@ import { NavLink } from 'react-router-dom';
 const Navigation = () => {
   const [petTypes, setPetTypes] = useState([]);
 
+  const linkStyle = (isActive) => {
+    let style = {
+      background: isActive ? '#320059' : '',
+      color: 'white',
+      textDecoration: 'none',
+      borderRadius: '18px',
+      padding: '6px 24px',
+      fontSize: '18px',
+      display: 'inline-block',
+      textAlign: 'center'
+    };
+    return style;
+  };
+
   useEffect(() => {
     async function getPetTypesData() {
       const { types } = await getPetTypes();
@@ -24,14 +38,7 @@ const Navigation = () => {
       </div>
       <ul className="nav-links">
         <li key="all" className="nav-link">
-          <NavLink
-            to={'/'}
-            end
-            isactive="true"
-            style={({ isActive }) => ({
-              background: isActive ? '#320059' : '#56009b'
-            })}
-          >
+          <NavLink to={'/'} end isactive="true" style={linkStyle()}>
             All Pets
           </NavLink>
         </li>
@@ -42,9 +49,7 @@ const Navigation = () => {
                   to={`/${type._links.self.href.split('/').pop()}`}
                   key={type.name}
                   end
-                  style={({ isActive }) => ({
-                    background: isActive ? '#320059' : '#56009b'
-                  })}
+                  style={linkStyle()}
                 >
                   {type.name}s
                 </NavLink>{' '}
