@@ -33,7 +33,7 @@ const HomePage = () => {
       {data.length ? (
         <div className="grid">
           {data.map((animal) => (
-            <Pet animal={animal} />
+            <Pet animal={animal} key={animal.id} />
           ))}
         </div>
       ) : (

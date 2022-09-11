@@ -16,7 +16,7 @@
   margin: 0;
 }
 
-.nav-link {
+/* .nav-link {
   color: white;
   text-decoration: none;
   border-radius: 18px;
@@ -28,7 +28,7 @@
 
 .nav-link-active {
   background: #320059;
-}
+} */
 
 .pet-type-label {
   text-transform: capitalize;
