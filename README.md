@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Taking lesson a few steps further
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project
 
-## Available Scripts
+This started as a project for a course on React Router. Right at the beginning of the
+lesson it was stated that it was intended for the previous version RR v5. I completed it
+as intended with relative ease. The next part is where it got interesting...
 
-In the project directory, you can run:
+## hosting
 
-### `yarn start`
+First pushed it from GitHub to Netlify with out issue. Next up GitHub Pages...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## GitHub
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Quickly learned about how GH Pages only supports static pages and all that goes into converting into an accepted
+format. Sounds easy when you read on how to use the gh-pages npm package. Im sure it had to do with the combination of me not creating the initial application and not having experience with the process. After finding all the different ways how not to get it to work I figured out the file path nuances. Now the page was there but no info to populate it...
 
-### `yarn test`
+## Service worker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+At the start of this I did'nt know what one was. I had realized earlier that the project had dummy data but
+didn't connect the dots that the api calls would have to be intercepted even on the local host. Took a while to stumble
+on to adding the new url to the startup of the service worker call but in the end the v5 version is up and running on gitHub with some css tweaks so it did'nt break when using a phone to visit the site.
 
-### `yarn build`
+## v6
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Now that everything was finally up and running time to upgrade. The update was'nt overly difficult but there are some little quirks. Like having to use a callback to make a link have custom styles and Having to use an extra Route to make a link active when the page loads. The way the app was designed was to have the all pets section just be the homepage rather than
+a dedicated component. That would'nt have been my choice but it did make it a little more interesting to get working right.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Take Away
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By doing it the longer way I've learned way more than was intended!
